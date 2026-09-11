@@ -1,4 +1,4 @@
-export const siteUrl = "https://www.fundacionproppositoposible.com";
+export const siteUrl = "https://fundacionproppositoposible.com";
 
 export const siteInfo = {
   name: "Fundación Propósito Posible",
