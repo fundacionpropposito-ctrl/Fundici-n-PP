@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { siteUrl } from "@/data/site";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -14,8 +15,6 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
-
-const siteUrl = "https://www.fundacionproppositoposible.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

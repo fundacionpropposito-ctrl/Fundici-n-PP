@@ -1,3 +1,5 @@
+export const siteUrl = "https://www.fundacionproppositoposible.com";
+
 export const siteInfo = {
   name: "Fundación Propósito Posible",
   nit: "900648904-1",
