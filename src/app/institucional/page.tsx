@@ -8,6 +8,16 @@ export const metadata: Metadata = {
   title: "Información institucional | Fundación Propósito Posible",
   description:
     "Datos institucionales de la Fundación Propósito Posible: naturaleza jurídica, NIT, ubicación y entidad de inspección y vigilancia.",
+  alternates: {
+    canonical: "/institucional",
+  },
+  openGraph: {
+    title: "Información institucional | Fundación Propósito Posible",
+    description:
+      "Datos institucionales de la Fundación Propósito Posible: naturaleza jurídica, NIT, ubicación y entidad de inspección y vigilancia.",
+    url: "/institucional",
+    type: "website",
+  },
 };
 
 const fields = [
