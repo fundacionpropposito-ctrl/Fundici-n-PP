@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="bg-brand-blue-dark text-white">
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-10 px-6 py-16 sm:px-8 md:grid-cols-3 lg:px-10">
         <div className="flex flex-col gap-4">
-          <Logo variant="light" />
+          <Logo />
           <p className="max-w-xs text-sm text-white/70">
             Trabajamos por comunidades con más oportunidades, bienestar y futuro.
           </p>
