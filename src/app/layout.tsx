@@ -15,7 +15,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://fundacionpropositoposible.org";
+const siteUrl = "https://www.fundacionproppositoposible.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
