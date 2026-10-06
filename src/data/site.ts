@@ -13,3 +13,26 @@ export const siteInfo = {
 };
 
 export const whatsappNumber = "573213998394";
+
+export const socialLinks = [
+  {
+    id: "facebook",
+    label: "Facebook",
+    href: "https://www.facebook.com/profile.php?id=61595075937937",
+  },
+  {
+    id: "youtube",
+    label: "YouTube",
+    href: "https://www.youtube.com/@FUNDACI%C3%93NPROROP%C3%93SITOPOSIBLE",
+  },
+  {
+    id: "tiktok",
+    label: "TikTok",
+    href: "https://www.tiktok.com/@fundacionpropositoposibe",
+  },
+  {
+    id: "linkedin",
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/fundaci%C3%B3n-prorop%C3%B3sito-posible-527647441/",
+  },
+] as const;

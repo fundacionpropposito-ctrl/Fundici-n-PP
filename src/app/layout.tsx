@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import SocialBar from "@/components/layout/SocialBar";
 import JsonLd from "@/components/seo/JsonLd";
 import { siteUrl } from "@/data/site";
 import { faqJsonLd, organizationJsonLd } from "@/data/structuredData";
@@ -83,6 +84,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <SocialBar />
       </body>
     </html>
   );
