@@ -28,7 +28,7 @@ export default function SocialBar() {
       aria-label="Redes sociales"
       className="fixed bottom-4 right-4 z-40 sm:bottom-6 sm:right-6"
     >
-      <ul className="flex items-center gap-2 rounded-full bg-white/95 p-2 shadow-lg ring-1 ring-slate-200 backdrop-blur-sm">
+      <ul className="flex flex-col items-center gap-2 rounded-full bg-white/95 p-2 shadow-lg ring-1 ring-slate-200 backdrop-blur-sm">
         {socialLinks.map(({ id, label, href }) => (
           <li key={id}>
             <a
@@ -37,7 +37,7 @@ export default function SocialBar() {
               rel="noopener noreferrer"
               aria-label={`${label} de la Fundación Propósito Posible`}
               title={label}
-              className={`flex h-10 w-10 items-center justify-center rounded-full text-white transition-transform duration-300 hover:-translate-y-1 hover:shadow-md ${brands[id].color}`}
+              className={`flex h-10 w-10 items-center justify-center rounded-full text-white transition-transform duration-300 hover:-translate-x-1 hover:shadow-md ${brands[id].color}`}
             >
               <svg viewBox="0 0 24 24" aria-hidden className="h-5 w-5 fill-current">
                 <path d={brands[id].path} />
