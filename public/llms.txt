@@ -28,3 +28,4 @@
 
 - [Inicio](https://www.fundacionproppositoposible.com/): presentación de la fundación, qué hace, proyectos y galería.
 - [Información institucional](https://www.fundacionproppositoposible.com/institucional): datos de constitución, NIT y entidad de inspección y vigilancia.
+- [Donaciones](https://www.fundacionproppositoposible.com/donaciones): cómo apoyar a la fundación con aportes en dinero o en especie (mercados, medicamentos, cobijas, ropa).

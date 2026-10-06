@@ -36,7 +36,7 @@ The site has no way to invite visitors to donate. The foundation receives money 
 ## Tasks
 
 - [x] T1 — `donate` Button variant + "Donaciones" button in Navbar (desktop and mobile). Route: delegated direct (writer trigger: 2+ non-trivial files across the feature).
-- [ ] T2 — `/donaciones` page with content, images, contact block, metadata, sitemap entry. Route: delegated direct (same writer).
+- [x] T2 — `/donaciones` page with content, images, contact block, metadata, sitemap entry. Route: delegated direct (same writer).
 
 ## Acceptance criteria
 
@@ -56,6 +56,10 @@ The site has no way to invite visitors to donate. The foundation receives money 
   - `npm run lint`: passed, no output
   - `npm run build`: passed
 
+- T2 done (route: delegated direct). `/donaciones` page, sitemap entry and llms.txt line added.
+  - `npm run lint`: passed, no output
+  - `npm run build`: passed, `/donaciones` prerendered static
+
 ## Next step
 
-- T2
+- User review; push/PR decision is the user's.
