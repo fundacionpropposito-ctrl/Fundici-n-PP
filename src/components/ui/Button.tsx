@@ -4,9 +4,10 @@ import type { ReactNode } from "react";
 type ButtonProps = {
   href: string;
   children: ReactNode;
-  variant?: "primary" | "secondary" | "outline-light";
+  variant?: "primary" | "secondary" | "outline-light" | "donate";
   icon?: ReactNode;
   external?: boolean;
+  onClick?: () => void;
 };
 
 const variants: Record<NonNullable<ButtonProps["variant"]>, string> = {
@@ -16,6 +17,8 @@ const variants: Record<NonNullable<ButtonProps["variant"]>, string> = {
     "bg-white text-brand-blue-dark border border-brand-blue/20 hover:border-brand-blue hover:text-brand-blue",
   "outline-light":
     "bg-transparent text-white border border-white/60 hover:bg-white hover:text-brand-blue-dark",
+  donate:
+    "bg-brand-rose text-white hover:bg-brand-rose-dark shadow-sm hover:shadow-md",
 };
 
 export default function Button({
@@ -24,12 +27,13 @@ export default function Button({
   variant = "primary",
   icon,
   external = false,
+  onClick,
 }: ButtonProps) {
   const className = `inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm sm:text-base font-semibold transition-all duration-300 ${variants[variant]}`;
 
   if (external) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className} onClick={onClick}>
         {children}
         {icon}
       </a>
@@ -37,7 +41,7 @@ export default function Button({
   }
 
   return (
-    <Link href={href} className={className}>
+    <Link href={href} className={className} onClick={onClick}>
       {children}
       {icon}
     </Link>

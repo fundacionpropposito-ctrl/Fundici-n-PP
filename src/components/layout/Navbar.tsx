@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Heart, Menu, X } from "lucide-react";
 import Logo from "@/components/ui/Logo";
 import Button from "@/components/ui/Button";
 import { navigationItems } from "@/data/navigation";
@@ -36,7 +36,7 @@ export default function Navbar() {
           <Logo />
         </Link>
 
-        <ul className="hidden items-center gap-8 lg:flex">
+        <ul className="hidden items-center gap-6 xl:gap-8 lg:flex">
           {navigationItems.map((item) => (
             <li key={item.href}>
               <Link
@@ -49,8 +49,11 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-3 lg:flex">
           <Button href="/#contacto">Contáctanos</Button>
+          <Button href="/donaciones" variant="donate" icon={<Heart size={18} />}>
+            Donaciones
+          </Button>
         </div>
 
         <button
@@ -79,8 +82,18 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <div className="mt-4">
-            <Button href="/#contacto">Contáctanos</Button>
+          <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+            <Button href="/#contacto" onClick={() => setOpen(false)}>
+              Contáctanos
+            </Button>
+            <Button
+              href="/donaciones"
+              variant="donate"
+              icon={<Heart size={18} />}
+              onClick={() => setOpen(false)}
+            >
+              Donaciones
+            </Button>
           </div>
         </div>
       )}

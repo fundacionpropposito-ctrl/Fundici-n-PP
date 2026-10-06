@@ -8,6 +8,8 @@
   --brand-blue-dark: #092051;
   --brand-green: #30991a;
   --brand-orange: #f0793c;
+  --brand-rose: #e11d48;
+  --brand-rose-dark: #be123c;
   --brand-white: #ffffff;
 
   --font-heading: var(--font-poppins);
@@ -22,6 +24,8 @@
   --color-brand-blue-dark: var(--brand-blue-dark);
   --color-brand-green: var(--brand-green);
   --color-brand-orange: var(--brand-orange);
+  --color-brand-rose: var(--brand-rose);
+  --color-brand-rose-dark: var(--brand-rose-dark);
   --color-brand-white: var(--brand-white);
 
   --font-sans: var(--font-body);
