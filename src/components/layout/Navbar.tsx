@@ -56,15 +56,25 @@ export default function Navbar() {
           </Button>
         </div>
 
-        <button
-          type="button"
-          aria-label={open ? "Cerrar menú" : "Abrir menú"}
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-full text-brand-blue-dark lg:hidden"
-        >
-          {open ? <X size={26} /> : <Menu size={26} />}
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <Link
+            href="/donaciones"
+            onClick={() => setOpen(false)}
+            className="inline-flex items-center justify-center gap-1.5 rounded-full bg-brand-rose px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-brand-rose-dark"
+          >
+            Donaciones
+            <Heart size={16} />
+          </Link>
+          <button
+            type="button"
+            aria-label={open ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+            className="flex h-10 w-10 items-center justify-center rounded-full text-brand-blue-dark"
+          >
+            {open ? <X size={26} /> : <Menu size={26} />}
+          </button>
+        </div>
       </nav>
 
       {open && (
@@ -85,14 +95,6 @@ export default function Navbar() {
           <div className="mt-4 flex flex-col gap-3 sm:flex-row">
             <Button href="/#contacto" onClick={() => setOpen(false)}>
               Contáctanos
-            </Button>
-            <Button
-              href="/donaciones"
-              variant="donate"
-              icon={<Heart size={18} />}
-              onClick={() => setOpen(false)}
-            >
-              Donaciones
             </Button>
           </div>
         </div>
