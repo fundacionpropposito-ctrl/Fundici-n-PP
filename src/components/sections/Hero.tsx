@@ -15,10 +15,6 @@ export default function Hero() {
         aria-hidden
         className="pointer-events-none absolute top-1/3 -right-32 h-96 w-96 rounded-full bg-brand-blue/10 blur-3xl"
       />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute bottom-0 left-1/4 h-20 w-20 rounded-full border-2 border-brand-orange/30"
-      />
 
       <Container className="relative grid grid-cols-1 items-center gap-12 lg:grid-cols-[1fr_1.05fr] lg:gap-8">
         <div className="flex flex-col items-start gap-6">
