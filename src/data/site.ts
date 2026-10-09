@@ -21,6 +21,11 @@ export const socialLinks = [
     href: "https://www.facebook.com/profile.php?id=61595075937937",
   },
   {
+    id: "instagram",
+    label: "Instagram",
+    href: "https://www.instagram.com/fundacionpropposito/",
+  },
+  {
     id: "youtube",
     label: "YouTube",
     href: "https://www.youtube.com/@FUNDACI%C3%93NPROROP%C3%93SITOPOSIBLE",
