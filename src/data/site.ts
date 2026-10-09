@@ -23,7 +23,7 @@ export const socialLinks = [
   {
     id: "instagram",
     label: "Instagram",
-    href: "https://www.instagram.com/fundacionpropposito/",
+    href: "https://www.instagram.com/fundacionpropositoposible/",
   },
   {
     id: "youtube",
