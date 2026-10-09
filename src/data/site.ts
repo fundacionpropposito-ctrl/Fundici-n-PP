@@ -35,9 +35,4 @@ export const socialLinks = [
     label: "TikTok",
     href: "https://www.tiktok.com/@fundacionpropositoposibe",
   },
-  {
-    id: "linkedin",
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/fundaci%C3%B3n-prorop%C3%B3sito-posible-527647441/",
-  },
 ] as const;
